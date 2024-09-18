@@ -1,0 +1,390 @@
+:root {
+  --text-color: white;
+}
+@font-face {
+    font-family: Roboto-light;
+    src: url('Roboto/Roboto-Light.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: smaller;
+}
+li {
+    list-style-type: none;
+    color: inherit;
+}
+
+section h2 {
+    margin: 20px 0;
+    /*font-size: 1.3rem;
+    font-weight: 100;*/
+}
+body {
+    font-family: 'Roboto-light';
+}
+.black-text {
+  color: black;
+}
+/****************************HEADER STYLES****************************/
+header {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    width: 100vw;
+    height: 10vh;
+    color: var(--text-color);
+    background-color: transparent;
+}
+
+header h1 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2.5rem;
+}
+nav {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+nav li {
+    padding: 5px 10px;
+}
+nav li:nth-child(5) {
+    border: 1px solid var(--text-color);
+}
+/***************************HERO SECTION STYLES****************************/
+section.hero {
+    width: 100vw;
+    height: 100vh;
+    background: url('images/valvonta_tietokone_istock-1024x652-1.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(51, 51, 51, 0.3);
+}
+.hero-overlay .social {
+    position: fixed;
+    bottom: 20vh;
+    right: 5vw;
+}
+.hero-overlay p {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 10%;
+}
+.hero-overlay .cta {
+    display: flex;
+    justify-content: space-around;
+    width: 25vw;
+    margin: 20px auto 0;
+}
+.cta span {
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+}
+.fa {
+    display: block;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+/***************************PROJECTS SECTION******************************/
+
+  .projects {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    /*background-color: #cfc9c5;/*#cfc9c5*/
+  }
+  .projects h2 {
+    display: block;
+    text-align: center;
+  }
+  .projects p {
+    width: 250px;
+    text-align: center;
+    margin: 20px auto 40px;
+  }
+  /* ----- slideshow stylings ----- */ 
+  .slideshow { 
+    height: 80%;
+    width: 80%; 
+    overflow: hidden; /* to hide slides in x-direction */ 
+    position: relative; 
+    margin: 0 auto;
+} 
+/* wrapper which wraps all the slideshow images stylings */ 
+.slideshow-wrapper { 
+    display: flex; 
+    width: 400%; 
+    height: 100%; 
+    position: relative; 
+    /* you can change the animation settings from below */ 
+    animation: slideshow 50s infinite; 
+ } 
+/* define width and height for images*/ 
+.slide { 
+    width: 100%; 
+    height: 100%; 
+} 
+.slide-img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain;  
+} 
+/* @keyframes are used to provide animations 
+   We make these settings for 4 image carousel. 
+   Make modification according to your needs. */ 
+@keyframes slideshow { 
+    0%  { left: 0; } 
+    10% { left: 0; } 
+    15% { left: -100%; } 
+    25% { left: -100%; } 
+    30% { left: -200%; } 
+    40% { left: -200%; } 
+    45% { left: -300%; } 
+    55% { left: -300%; } 
+    60% { left: -200%; } 
+    70% { left: -200%; } 
+    75% { left: -100%; } 
+    85% { left: -100%; } 
+    90% { left: 0%; } 
+} 
+/* ----- end of slideshow stylings ----- */ 
+
+/* ----- carousel control buttons stylings ----- */ 
+.slide-btn { 
+    background-color: #fff; 
+    border-radius: 50%; 
+    border: .2rem solid #333; 
+    width: 1.2rem; 
+    height: 1.2rem; 
+    outline: none; 
+    cursor: pointer; 
+    /* stylings for positioning the buttons at 
+       the bottom of the carousel */ 
+    position: absolute; 
+    bottom: 3%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 70; 
+} 
+/* As we provide position as absolute,  
+the buttons places one over the other.  
+So, we have to place them individually 
+at their correct positions. */ 
+.slide-btn-1 { 
+    left: 45%; 
+} 
+.slide-btn-2 { 
+    left: 50%; 
+} 
+.slide-btn-3 { 
+    left: 55%; 
+} 
+.slide-btn-4 { 
+    left: 60%; 
+} 
+/* When we focus on the particular button,  
+the animation stops to that particular image  
+to which the button is associated. */ 
+.slide-btn-1:focus~.slideshow-wrapper { 
+    animation: none; 
+    left: 0; 
+} 
+.slide-btn-2:focus~.slideshow-wrapper { 
+    animation: none; 
+    left: -100%; 
+} 
+.slide-btn-3:focus~.slideshow-wrapper { 
+    animation: none; 
+    left: -200%; 
+} 
+.slide-btn-4:focus~.slideshow-wrapper { 
+    animation: none; 
+    left: -300%; 
+} 
+/* when we focus on the button, the background color changes */ 
+.slide-btn:focus { 
+    background-color: #308d46; 
+} 
+
+  /*************************ABOUT ME SECTION*****************************/
+  .about-me {
+    width: 100vw;
+    height: 100vh;
+    padding: 25vh 0 0 5vw;
+    color: white;
+    background-image: url('images/man-sits-floor-with-laptop-his-hands_853645-19306.avif');
+    background-size: cover;
+  }
+  .about-me h2 {
+    
+  }
+  .about-me p {
+    width: 30%;
+    margin-top: 10px;
+  }
+  
+
+  /*******************************SKILLS SECTION***************************/
+  /*
+  credit
+  https://www.google.com/search?q=radial+progress+bar+css&oq=radial+progress+bar+c&gs_lcrp=EgZjaHJvbWUqCQgAEAAYExiABDIJCAAQABgTGIAEMgkIARAAGBMYgAQyBggCEEUYOTIJCAMQABgTGIAEMgoIBBAAGBMYFhgeMgoIBRAAGBMYFhgeMgoIBhAAGBMYFhgeMgoIBxAAGBMYFhgeMgoICBAAGBMYFhgeMgoICRAAGBMYFhgeqAIAsAIA&sourceid=chrome&ie=UTF-8#fpstate=ive&ip=1&vld=cid:9c83571d,vid:sDpfRFUcxY4,st:0
+  */
+  section.skills {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+  }
+  .skills h2 {
+    text-align: center;
+  }
+  .skills p {
+    width: 250px;
+    text-align: center;
+    margin: 20px auto 40px;
+  }
+  .skills-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    /*justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;*/
+    place-items: center;
+    gap: 40px;
+    width: 60vw;
+    margin: 0 auto;
+  }
+  .progress-bar {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: 
+      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+      conic-gradient(var(--main-color) calc(var(--progress-value) * 1%), var(--light-color) 0);
+      animation: progress 3s infinite forwards;    
+  }
+  .progress-bar::before {
+    counter-reset: percentage var(--progress-value);
+    content: counter(percentage) '%';
+    color: var(--main-color);
+    animation: progress 2s 1 forwards;
+  }
+  .progress-bar img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  @property --progress-value {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  @keyframes progress {
+   to { --progress-value: var(--i); }
+  }
+  
+  /*************************FOOTER STYLES*******************************/
+  footer {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('images/Content-Writer-Know-About-Web-Development.jpeg');
+    background-size: cover;
+  }
+  .footer-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    padding: 25vh 0 0 5vw;
+  }
+  .icon {
+    font-size: 2rem;
+    color: white;
+  }
+  .contact-info {
+    display: flex;
+    margin-top: 20px;
+  }
+  .contact-info .icon {
+    font-size: 1.5rem;
+  }
+  .info-text {
+    width: 200px;
+    margin-left: 10px;
+    font-size: .8rem;
+    color: white;
+  }
+  /*FOOTER FORM STYLES*/
+  form {
+    margin-bottom: 40px;
+  }
+  form .input-container {
+    display: flex;
+    width: 25vw;
+    margin-bottom: 30px;
+    border-bottom: 1px dotted white;
+  }
+  form input {
+    margin-left: 10px;
+
+    border: none;
+    color: white;
+    background-color: transparent;
+  }
+  textarea {
+    width: 25vw;
+    height: 30px;
+    padding-top: 10px;
+    border: none;
+    color: white;
+    border-bottom: 1px dotted white;
+    background-color: transparent;
+  }
+  form input:focus, textarea:focus {
+    outline: none;
+  }
+  input[type=submit] {
+    display: block;
+    margin-top: 30px;
+    margin-left: 0;
+    padding: 6px 12px;
+    border: 1px solid white;
+  }

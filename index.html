@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--logo font (Shadows into light)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <!--font awesome social media icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--Google user icon in footer contact form-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,0"
+    />
+    <!--Google email icon in footer contact form-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,0"
+    />
+    <!--Google location icon in footer-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0"
+    />
+    <!--Google phone icon in footer-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0"
+    />
+    <!--my stylesheet-->
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="logo">webAfrique</h1>
+      <nav>
+        <li><a href="http://">Projects</a></li>
+        <li><a href="http://">Skills</a></li>
+        <li><a href="http://">Gallery</a></li>
+        <li><a href="http://">About Me</a></li>
+        <li><a href="http://">Contact</a></li>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero"></section>
+      <div class="hero-overlay">
+        <p>Freelance web developer on demand</p>
+        <div class="cta">
+          <span>Hire me</span>
+          <span>Give me a project</span>
+        </div>
+        <div class="social">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+        </div>
+      </div>
+      <section class="projects">
+        <h2>Recent Projects</h2>
+        <!-- <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
+          ipsum in similique dignissimos nesciunt asperiores, dolore omnis,
+          vero, cumque molestiae sint minima consequuntur adipisci modi.
+        </p> -->
+        <div class="slideshow">
+          <!-- carousel wrapper which contains all images -->
+          <div class="slideshow-wrapper">
+            <div class="slide">
+              <img
+                class="slide-img"
+                src="images/Demas-Rusli_s-photography-portfolio-1536x764.webp"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="slide-img"
+                src="images/flat-design-plant-shop-template_23-2150294956.avif"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="slide-img"
+                src="images/flat-design-travel-landing-page_23-2149126990.avif"
+              />
+            </div>
+            <div class="slide">
+              <img
+                class="slide-img"
+                src="images/landing-page-template-design-newsletter_23-2148948010.avif"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- carousel control buttons -->
+        <button class="slide-btn slide-btn-1"></button>
+        <button class="slide-btn slide-btn-2"></button>
+        <button class="slide-btn slide-btn-3"></button>
+        <button class="slide-btn slide-btn-4"></button>
+      </section>
+
+      <section class="about-me">
+        <h2>About Me</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
+          ipsum in similique dignissimos nesciunt asperiores, dolore omnis,
+          vero, cumque molestiae sint minima consequuntur adipisci modi.
+          Mollitia fuga quaerat repellendus sequi? Minima optio accusantium non
+          illo ab dolorem fugiat distinctio, quas ipsum dolore? Veniam
+          distinctio error pariatur, ratione et fugit voluptatem illo eius
+          soluta perferendis earum voluptas,
+        </p>
+      </section>
+      <section class="skills">
+        <h2>Skill Set</h2>
+
+        <div class="skills-container">
+          <div
+            class="progress-bar"
+            style="
+              --i: 95;
+              --main-color: rgb(247, 223, 30);
+              --light-color: rgba(247, 223, 30, 0.5);
+            "
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              height="20"
+              width="20"
+              alt="javascript logo"
+            />
+          </div>
+          <div
+            class="progress-bar"
+            style="
+              --i: 62;
+              --main-color: rgb(0, 122, 204);
+              --light-color: rgba(0, 122, 204, 0.5);
+            "
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+              height="20"
+              width="20"
+              alt="typescript logo"
+            />
+          </div>
+          <div
+            class="progress-bar"
+            style="
+              --i: 62;
+              --main-color: rgb(97, 219, 251);
+              --light-color: rgba(97, 219, 251, 0.5);
+            "
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              height="20"
+              width="20"
+              alt="react logo"
+            />
+          </div>
+          <div
+            class="progress-bar"
+            style="
+              --i: 85;
+              --main-color: rgb(108, 194, 74);
+              --light-color: rgba(108, 194, 74, 0.5);
+            "
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              height="20"
+              width="20"
+              alt="nodejs logo"
+            />
+          </div>
+          <div
+            class="progress-bar"
+            style="
+              --i: 85;
+              --main-color: rgb(224, 35, 78);
+              --light-color: rgba(224, 35, 78, 0.5);
+            "
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg"
+              height="20"
+              width="20"
+              alt="nestjs logo"
+            />
+          </div>
+          <div
+            class="progress-bar"
+            style="
+              --i: 85;
+              --main-color: rgb(27, 185, 200);
+              --light-color: rgba(27, 185, 200, 0.5);
+            "
+          >
+            <img
+              src="images/next.webp"
+              height="20"
+              width="20"
+              alt="nextjs logo"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-overlay">
+        <form action="#">
+          <div class="input-container">
+            <span class="material-symbols-outlined icon"> person </span>
+            <input type="text" name="" id="" placeholder="Name" />
+          </div>
+          <div class="input-container">
+            <span class="material-symbols-outlined icon"> mail </span>
+            <input type="email" name="" id="" placeholder="email" />
+          </div>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your message"
+          ></textarea>
+          <input type="submit" value="submit" />
+        </form>
+        <!-- <div class="contact-info">
+          <span class="material-symbols-outlined icon"> home_pin </span>
+          <span class="info-text"
+            >Information center 8th floor, 37 King Perekule St. Port
+            Harcourt</span
+          >
+        </div> -->
+        <div class="contact-info">
+          <span class="material-symbols-outlined icon"> mail </span>
+          <span class="info-text">info@webAfrique.web</span>
+        </div>
+        <div class="contact-info">
+          <span class="material-symbols-outlined icon"> call </span>
+          <span class="info-text">+234 000 000</span>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- <div
+            class="progress-bar"
+            style="
+              --i: 75;
+              --main-color: rgb(198, 61, 20);
+              --light-color: rgba(198, 61, 20, 0.5);
+            "
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg"
+              height="20"
+              width="20"
+              alt="jest logo"
+            />
+          </div> -->
