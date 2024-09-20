@@ -33,7 +33,7 @@ body {
   color: black;
 }
 /****************************HEADER STYLES****************************/
-header {
+.desktop-header {
     position: fixed;
     top: 0;
     z-index: 2;
@@ -47,20 +47,74 @@ header {
     background-color: transparent;
 }
 
-header h1 {
+.desktop-header h1 {
     font-family: 'Shadows Into Light', cursive;
     font-size: 2.5rem;
 }
-nav {
+.desktop-nav {
     width: 30%;
     display: flex;
     justify-content: space-around;
 }
-nav li {
+.desktop-nav li {
     padding: 5px 10px;
 }
-nav li:nth-child(5) {
+.desktop-nav li:nth-child(5) {
     border: 1px solid var(--text-color);
+}
+
+/*  Mobile view header*/
+@media screen and (max-width: 400px) {
+    .desktop-header {
+        display: none;
+    }
+        .mobile-header {
+          overflow: hidden;
+          background-color: transparent;
+          position: relative;
+        }
+
+        .mobile-header h1 {
+          font-family: 'Shadows Into Light', cursive;
+          font-size: 1.2rem;
+          color: black; /*white*/                     /*  RESUME        FROM          HERE  */
+      }
+        
+        /* Hide the links inside the navigation menu (except for logo/home) */
+        .mobile-header #mobile-nav {
+          display: none;
+        }
+        
+        /* Style navigation menu links */
+        .mobile-header a {
+          color: white;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+          display: block;
+        }
+        
+        /* Style the hamburger menu */
+        .mobile-header a.icon {
+          background: black;
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        
+        /* Add a grey background color on mouse-over */
+        .mobile-header a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        
+        /* Style the active link (or home/logo) */
+        .active {
+          background-color: #04AA6D;
+          color: white;
+        }
+  
 }
 /***************************HERO SECTION STYLES****************************/
 section.hero {
@@ -114,6 +168,15 @@ section.hero {
   .fa:hover {
       opacity: 0.7;
   }
+
+/*  HERO SECTION MOBILE VIEW  */
+/*display mobile menu when screensize is 400 px or less*/
+@media screen and (max-width: 400px) {
+    /* Style the navigation menu */
+
+}
+
+
 /***************************PROJECTS SECTION******************************/
 
   .projects {
