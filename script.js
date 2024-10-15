@@ -1,3 +1,5 @@
+const mobileMenu = document.querySelector('.mobile-menu-icon')
+const mobileNav = document.querySelector('.mobile-header nav')
 const projects = document.querySelector('.projects')
 const skills = document.querySelector('.skills')
 const logo = document.querySelector('#logo')
@@ -34,6 +36,16 @@ function makeBlackText() {
         icon.style.color = 'black'
     })
 }
+
+function toggleMobileNav() {
+    mobileNav.style.display = mobileNav.style.display === 'block' ? 'none' : 'block'
+    //mobileNav.classList.toggle('show')
+    //mobileMenu.classList.toggle('fa-bars')
+    //alert('clicked')
+
+  }
+
+  mobileMenu.addEventListener('click', toggleMobileNav)
 
 document.addEventListener('scroll', () => {
     if(isInViewport( projects ) || isInViewport(skills)) {

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--logo font (Shadows into light)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+        rel="stylesheet"
+    />
+    <!--font awesome social media icons-->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--Google user icon in footer contact form-->
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,0"
+    />
+    <!--Google email icon in footer contact form-->
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,0"
+    />
+    <!--Google location icon in footer-->
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0"
+    />
+    <!--Google phone icon in footer-->
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0"
+    />
+    <!-- Google hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
+
+    <!--my stylesheet-->
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Portfolio</title>
+</head>
+<body>
+  <header class="desktop-header">
+    <h1 id="desktop-logo">webAfrique</h1>
+    <nav class="desktop-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#skills">Skills</a></li>
+      <li><a href="index.html#about">About Me</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </nav>
+  </header>
+  <!-- header with mobile menu for small screens -->
+    <header class="mobile-header">
+    <h1 id="mobile-logo">webAfrique</h1>
+    <div class="mobile-menu">
+      <span class="material-symbols-outlined mobile-menu-icon">
+        menu
+      </span>
+      <nav>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#about">About Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </nav>
+    </div>
+  </header>
+      <div class="hero-overlay">
+        <!--<p>Freelance web developer on demand</p>
+        <div class="cta">
+          <span>Let's talk</span>
+          <span>See my work</span>
+        </div> -->
+        <div class="social">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+        </div>
+      </div> 
+    
+        <!-- gallery -->
+    <section class="gallery">
+      <div class="image-container">
+        <img src="images/ivan dan portfolio.png" style="width:100%">
+            <img src="images/laptop with mugs.avif" style="width:100%">
+            <img src="images/web-developer-portfolio.webp" style="width:100%">
+            <img src="images/man-sits-floor-with-laptop-his-hands_853645-19306.avif" style="width:100%">
+            <img src="images/website-templates2.jpg" style="width:100%">
+            <img src="images/website-template3.webp" style="width:100%">
+            <img src="images/projects1.webp" style="width:100%">
+            <img src="images/Demas-Rusli_s-photography-portfolio-1536x764.webp" style="width:100%">
+            <img src="images/flat-design-travel-landing-page_23-2149126990.avif" style="width:100%">
+            <img src="images/projects3.webp" style="width:100%">
+      </div>
+    </section>
+      <footer>
+        <div class="footer-overlay">
+          <form id="contact">
+            <div class="input-container">
+              <span class="material-symbols-outlined icon"> person </span>
+              <input type="text" name="" id="" placeholder="Name" />
+            </div>
+            <div class="input-container">
+              <span class="material-symbols-outlined icon"> mail </span>
+              <input type="email" name="" id="" placeholder="email" />
+            </div>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Your message"
+            ></textarea>
+            <input type="submit" value="submit" />
+          </form>
+          <!-- <div class="contact-info">
+            <span class="material-symbols-outlined icon"> home_pin </span>
+            <span class="info-text"
+              >Information center 8th floor, 37 King Perekule St. Port
+              Harcourt</span
+            >
+          </div> -->
+          <div class="contact-info">
+            <span class="material-symbols-outlined icon"> mail </span>
+            <span class="info-text">info@webAfrique.web</span>
+          </div>
+          <div class="contact-info">
+            <span class="material-symbols-outlined icon"> call </span>
+            <span class="info-text">+234 000 000</span>
+          </div>
+        </div>
+      </footer>
+    <script src="script.js"></script>
+</body>
+</html>
